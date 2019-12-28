@@ -1,0 +1,98 @@
+/*configuracao basica*/
+body{
+    margin: 0 0 0 0;
+    padding: 0%;
+    background-color: rgb(0, 0, 0);/*Cor do fundo*/
+    font-family: 'Montserrat', sans-serif;/*fonte principal*/
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    text-align: center;
+}
+/*para mobile*/
+.hide_mobile{
+    display: none;
+}
+/*CABECALHO*/
+header{
+    position: sticky;
+    top: 0;
+    margin: 0 0 0 0;
+    padding: 0%;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 0 0 0;
+    padding: 0%;
+    /*fundo*/
+    background-color: black;
+    opacity: 0.6;
+}
+
+.itembar{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+}
+
+/*CAPA*/
+.titulo_pag{
+    color: white;
+    text-align: center;
+}
+
+.titulo_pag h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.capa_pag{
+    max-width: 100%;
+    width: 12em;
+    height: auto;
+    /*para ser redondo*/
+    border-radius: 50%;
+}
+
+.capa_pagina{
+    margin-bottom: 5em;
+    padding: 3em;
+}
+
+/*ABOUT*/
+.bio_txt{
+    text-align: justify;
+}
+.titulo{
+    margin-left: 1em;
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.linha{
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+    opacity: 0.6;
+}
+
+.texto{
+    color: grey;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    font-size: 15px;
+}
