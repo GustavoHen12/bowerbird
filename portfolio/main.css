@@ -76,6 +76,7 @@ header{
 /*ABOUT*/
 .bio_txt{
     text-align: justify;
+    margin-bottom: 2em;
 }
 .titulo{
     margin-left: 1em;
@@ -85,8 +86,8 @@ header{
 }
 
 .linha{
-    margin-left: 2.5em;
     margin-bottom: 1.5em;
+    margin-left: 2.5em;
     opacity: 0.6;
 }
 
@@ -95,4 +96,193 @@ header{
     margin-left: 2.5em;
     margin-right: 2.5em;
     font-size: 15px;
+}
+
+/* - skills*/
+.bio_skl{
+    margin-top: 2em;
+    text-align: left;
+}
+.subtitulo{
+    margin-left: 1.5em;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.grf_1{
+    background-color: grey;
+    height: 30px;
+    text-align: end;
+    margin: 0 2em 0 2em;
+    padding: 0%;
+    position: relative;
+}
+.branco{
+    color: white;
+    position: absolute;
+    right: -2em;
+    top: -0.5em;
+}
+.porcentagem{
+    background-color: white;
+    z-index: 2;
+    float: left;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+}
+
+.resumo_bio{
+    background-color: white;
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.preto{
+    color: black;
+}
+
+.botao{
+    border: none;
+    background-color: white;
+    margin: 2em auto 2em 2.5em;
+    width: 10em;
+    height: 2.5em;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    color: black;
+    font-weight: 300;
+    
+}
+
+.botao:hover{
+    background: grey;   
+}
+
+/*price*/
+.bio_price{
+    margin-top: 2em;
+    text-align: left;
+}
+.price_container{
+    background-color:rgb(138, 138, 138);
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.6;
+}
+
+.price_container:hover{
+    opacity: 1;
+}
+.titulo_price{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+.ttl_price{
+    background-color: rgb(43, 42, 42) ;
+    width: 100%;
+    text-align: center;
+}
+.item{
+    height: 15%;
+    background-color: rgb(204, 204, 204);
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+}
+.preco{
+    height: 30%;
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+    margin-top: 1px;
+}
+
+.titulo_preco {    height: 10%;
+    margin-left: 0em;
+    font-weight: 500;
+    font-size: 28px;
+    color: black;
+}
+
+.subtexto{
+    margin-top: -1em;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgb(43, 42, 42);
+}
+
+.botao_area{
+    height: 30%;
+    text-align: center;
+    background-color: rgb(112, 110, 110) ;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.botao_2{
+    border: none;
+    background-color: rgb(161, 161, 161);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 6em;
+    height: 2.5em;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+    font-weight: 300;
+    
+}
+
+.botao_2:hover{
+    background: black;
+    color: white;   
+}
+
+/*reputation*/
+.bio_reputation{
+    margin-top: 2em;
+    text-align: left;  
+}
+
+.reputation_content{
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+    padding-bottom: .5em;
+}
+.reputation_img{
+    max-width: 100%;
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    left: 1em;
+    margin-right: 2em;
+}
+
+.reputation_img img {
+  width: auto;
+  height: 100%;
+  margin-left: -30px;
+}
+
+.nome{
+    font-size: 20px;
 }
