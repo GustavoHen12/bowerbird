@@ -286,3 +286,68 @@ header{
 .nome{
     font-size: 20px;
 }
+
+/*My photos*/
+
+.container_photos, .container_contact{
+        text-align: justify;
+        margin-bottom: 6em;
+}
+.photo_ct{
+    margin: 2em;
+    margin-bottom: -4em;
+    padding: 1em;
+}
+
+.photo{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Contact me*/
+.contact_info{
+    margin-left: 2em;
+}
+
+.contact_content{
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.contact_content img{
+    width: 2em;
+    height: auto;
+}
+.contact_msg{
+    margin-top: 2em;
+    margin-right: 4em;
+    margin-left: 0em;
+}
+
+.contact_msg button{
+    margin-left: 1.8em;
+    margin-top: 1.5em;
+}
+.formu{
+    border:none;
+    border-bottom:1px solid #ccc;
+    display:block;
+    width: 100%;
+    height: 3em;
+    margin: 1em 2em 0em 2em;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.icone{
+    width: 2em;
+    height: auto;
+    margin: 1em;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icone:hover{
+    opacity: 0.6;
+}
