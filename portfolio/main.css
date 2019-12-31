@@ -18,7 +18,7 @@ a{
     text-align: center;
 }
 /*para mobile*/
-.hide_mobile{
+.hide_mob{
     display: none;
 }
 /*CABECALHO*/
@@ -268,7 +268,6 @@ header{
     max-width: 100%;
     width: 4em;
     height: 4em;
-    display: inline-block;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -278,9 +277,9 @@ header{
 }
 
 .reputation_img img {
-  width: auto;
-  height: 100%;
-  margin-left: -30px;
+    width: auto;
+    height: 100%;
+    margin-left: -30px;
 }
 
 .nome{
@@ -290,8 +289,8 @@ header{
 /*My photos*/
 
 .container_photos, .container_contact{
-        text-align: justify;
-        margin-bottom: 6em;
+    text-align: justify;
+    margin-bottom: 6em;
 }
 .photo_ct{
     margin: 2em;
@@ -350,4 +349,117 @@ header{
 
 .icone:hover{
     opacity: 0.6;
+}
+
+@media screen and (min-width: 650px){
+    /*Cabecalho lateral*/
+    header{
+        margin: 0 0 0 0;
+        padding: 0%;
+        float: left;
+        height: 100%;
+        width:8em;
+        background-color:rgb(53, 52, 52);
+        position:fixed!important;
+        z-index:1;
+        overflow:auto;
+        opacity: 1;
+    }
+    .container{
+        margin-left: 8em;
+    }
+    .show_desk, .hide_mob{
+        display: block;
+    }
+    .botao_c{
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        background: rgb(53, 52, 52);
+        width: 100%;
+        height: 7em;
+    }
+
+    .botao_c:hover{
+        background: black;
+    }
+
+    .botao_c img{
+        width: 1.7em;
+        height: auto;
+        margin-bottom: .8em;
+    }
+
+    .botao_c p{
+        font-size: 6px; 
+    }
+
+    /*outros*/
+    .resumo_bio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 2em;
+        margin-right: 1em;
+        padding: 0%;
+    }
+
+    .botao{
+        margin-left: 2em;
+    }
+    .bio_price{
+        background: black;
+    }
+    .preco_container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 1em;
+        overflow: auto;
+        margin-top: -2em;
+    }
+
+    .price_container{
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_photosE{
+        display: flex;
+        align-items: top;
+        flex-direction: row;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .photo_ct{
+        width: 50%;
+        height: auto;
+        margin-left: 0;
+        margin-right: .7em;
+        padding: 0;
+    }
+    .photo{
+        margin-bottom: .7em;
+    }
+    .hide_desk{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .container{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main{
+        float: right;
+        width: 90%;
+    }
+
 }
