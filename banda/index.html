@@ -1,0 +1,252 @@
+<!--w3schools.com/w3css/tryw3css_templates_band.htm-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Roboto&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<title>Banda demo</title>
+</head>
+<body>
+	<!--Cabecalho-->
+	<header>
+	<!--links-->
+		<nav class = "cabecalho">
+			<ul class = "show-mob hide-desk menuBar">
+				<li class = "menu_mobile "><a href: "#">HOME</a></li>
+				<li><a href="javascript:void(0)" onclick="myFunction()"><img class = "menu_mobile"  src="img/menu.svg" alt="menu mobile"></a></li>
+			</ul>
+			<ul class = "submenu_mobil hide" id = "navDemo">
+				<li class = "itemBar" onclick="myFunction()" ><a href= "#inicio">BAND</a></li>
+				<li class = "itemBar" onclick="myFunction()"><a href= "#tourne">TOURNE</a></li>
+				<li class = "itemBar" onclick="myFunction()"><a href= "#contact">CONTACT</a></li>
+			</ul>
+			<ul class = "menuBar show-desk hide-mob">
+				<li class = "itemBar"><a href= "#home">HOME</a></li>
+				<li class = "itemBar"><a href= "#inicio">BAND</a></li>
+				<li class = "itemBar"><a href= "#tourne">TOUR</a></li>
+				<li class = "itemBar"><a href= "#contact">CONTACT</a></li>
+				<li class = "itemBar"><a href= "#">MORE</a>
+					<ul>
+						<div class = "submenu">
+							<li class = "itemBar"><a href: "#">Merchandise</a></li>
+							<li class = "itemBar"><a href: "#">Extra</a></li>
+							<li class = "itemBar"><a href: "#">Media</a></li>
+						</div>
+						
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class = "container" id = "home">
+		<!--slide de imagens-->
+		<div class = "slides" >
+			<img class = "img_slide" src = "img/img1.jpg" alt = "cidade 1">
+			<div class = "txt_slide show-desk hide-mob">
+				<h3 class = "subti_slide">New York</h3>
+				<p class = "descr_slide">The atmosphere in New York is lorem ipsum.</p>
+			</div>
+		</div>
+		<div class = "slides">
+			<img class = "img_slide" src = "img/img2.jpg" alt = "cidade 2">
+			<div class = "txt_slide hide-mob show-desk">
+				<h3 class = "subti_slide">Chicago</h3>
+				<p class = "descr_slide">Thank you, Chicago - A night we won't forget.</p>
+			</div>
+		</div>
+		<div class = "slides">
+			<img class = "img_slide" src = "img/img3.jpg" alt = "cidade 3">
+			<div class = "txt_slide hide-mob show-desk">
+				<h3 class = "subti_slide">Venice</h3>
+				<p class = "descr_slide">The atmosphere in New York is lorem ipsum.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class = "container bio" id="inicio">
+		<!--bio-->
+		<div class = "descricao">
+			<h2 class = "titulo">THE BAND</h2>
+			<p class = "subtitulo"><i>We love music</i></p>
+			<p class = texto>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div>
+			<nav>
+				<ul>
+					<li>
+						<p class = "nome_perfil">Nome Sobrenome</p>
+						<img class = "foto_perfil" src="img/integrante.jpg" alt = "integrante">
+						
+					</li>
+					<li>
+						<p class = "nome_perfil">Nome Sobrenome</p>
+						<img class = "foto_perfil" src="img/integrante.jpg" alt = "integrante">
+						
+					</li>
+					<li>
+						<p class = "nome_perfil">Nome Sobrenome</p>
+						<img class = "foto_perfil" src="img/integrante.jpg" alt = "integrante">
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class = "container container-tourne" id="tourne">
+		<!--tourne-->
+		<div class = "toune_content">
+			<h2 class = "titulo branco">TOUR DATES</h2>
+			<p class = "subtitulo preto"><i>Remember to book your tickets!</i></p>
+
+			<!-- (?) fazer tabela-->
+
+			<div class = "tourne">
+				<nav>
+					<ul>
+						<li>
+							<div class = "cidades_toune">
+								<img src = "img/cidade1.jpg" alt = "cidade tourne">
+								<div class = "cidade_desc">
+									<h4 class = "titulo_cidade">New York</h4>
+									<p class = "subtitulo">Fri 27 Nov 2016</p>
+									<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+									<div class = "botao">
+										<p class = "texto branco ">Buy Tickets</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class = "cidades_toune">
+								<img src = "img/cidade2.jpg" alt = "cidade tourne">
+								<div class = "cidade_desc">
+									<h4 class = "titulo_cidade">Paris</h4>
+									<p class = "subtitulo">Fri 27 Nov 2016</p>
+									<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+									<div class = "botao">
+										<p class = "texto branco ">Buy Tickets</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class = "cidades_toune">
+								<img src = "img/cidade3.jpg" alt = "cidade tourne">
+								<div class = "cidade_desc">
+									<h4 class = "titulo_cidade">Sao Francisco</h4>
+									<p class = "subtitulo">Fri 27 Nov 2016</p>
+									<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+									<div class = "botao">
+										<p class = "texto branco ">Buy Tickets</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class = "container container-contato" id = "contact">
+		<!--Contatos-->
+		<h2 class = "titulo" >CONTACT</h2>
+		<p class = "subtitulo"><i>Fan? Drop a note!</i></p>
+		<div class = "contact_texto">
+			<div class = "contact_txt">
+				<img class = "contact_local" src = "img/icone1.svg" alt = "icone">
+				<p class = "text_contact">Chicago, US</p>
+			</div>
+			<div class = "contact_txt">
+				<img class = "contact_local" src = "img/icone2.svg" alt = "icone">
+				<p class = "text_contact">Phone: +00 151515</p>
+			</div>
+			<div class = "contact_txt">
+				<img class = "contact_local" src = "img/icone3.svg" alt = "icone">
+				<p class = "text_contact"> Email: mail@mail.com</p>
+			</div>
+		</div>
+		
+		<!--Formulario de contato-->
+		<div class = "container_form">
+			<form>
+				<div class = "form_ident">
+					<div>
+						<input class="formu" type="text" placeholder="Name" required name="Name">
+					</div>
+					<div>
+						<input class="formu" type="text" placeholder="Email" required name="Email">
+					</div>
+				</div>
+				<div class="form_msg">
+					<input class="formu" type="text" placeholder="Message" required name="Message">
+				</div>
+				<div class = "botao_env">
+					<p class = "branco ">SEND</p>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+	<div class = "container">
+		<img class="img_fundo" src = "img/fundo.jpg" alt ="imagen de fundo">
+	</div>
+
+	<footer class = "container">
+		<div class = "rodape">
+			<a href: "#"><img class = "icone" src="img/facebook.svg" alt="rede social"></a>
+			<a href: "#"><img class = "icone" src="img/twitter.svg" alt="rede social"></a>
+			<a href: "#"><img class = "icone" src="img/instagram.svg" alt="rede social"></a>
+		</div>
+	</footer>
+
+
+
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("slides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1}
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel, 3000); // Change image every 2 seconds
+		}
+
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function myFunction2() {
+		var x = document.getElementById("navDemo");
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		} else { 
+			x.className = x.className.replace(" w3-show", "");
+		}
+		}
+
+		function myFunction() {
+		var x = document.getElementById("navDemo");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+		} 
+		// When the user clicks anywhere outside of the modal, close it
+		var modal = document.getElementById('ticketModal');
+		window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+		}
+	</script>
+</body>
+</html>

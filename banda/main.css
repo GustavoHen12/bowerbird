@@ -1,0 +1,319 @@
+body{
+    margin: 0 0 0 0;
+    padding: 0%;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    /*Deixa o cabecalho fixo na tela*/
+    position: sticky;
+    top: 0; 
+    /*preenche os espacos*/
+    height: auto;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    text-align: center;
+}
+
+.menuBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_mobile{
+    color: white;
+    width: 1.5em;
+    height: 1.5em;
+    padding-right: 2em;
+    cursor: pointer;
+}
+
+.itemBar{
+    color: blanchedalmond;
+}
+
+.hide-mob{
+    display: none;
+}
+
+.img_slide{
+    max-width:100%;
+    height:auto;
+}
+
+.titulo{
+    margin-top: 3em;
+}
+
+.subtitulo{
+    color:rgb(109, 109, 109);
+    font-size: 15px;
+    margin-top: -1em;
+}
+
+.texto{
+    margin: 0 5% 0 5%;
+    text-align: justify;
+}
+
+.nome_perfil{
+    margin-top: 20%;
+}
+
+.foto_perfil{
+    border-radius: 6px;
+    width: 60%;
+}
+
+.container-tourne{
+    padding-top: 3em;
+    background-color: black;
+    overflow: auto;
+}
+
+.branco{
+    color: white;
+}
+
+.cidades_toune{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 3em 2em 3em auto;
+}
+
+.cidades_toune img{
+    max-width:100%;
+    height:auto;
+}
+
+.cidades_toune p{
+    text-align: left;
+    margin: 1em;
+}
+
+.titulo_cidade{
+    text-align: left;
+    margin: 1em;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    background: black;
+    margin: 1em;
+    width: 7.5em;
+    height: 2.5em;
+    cursor: pointer; 
+}
+
+.botao p{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+.botao:hover{
+    background-color: rgb(109, 109, 109);
+}
+
+.contact_txt{
+    display: flex;
+    align-items: center;
+    margin-bottom: -1em;
+}
+
+.contact_local{
+    width: 1em;
+    margin-left: 1em;
+    margin-right: .7em;
+}
+
+.botao_env{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: black;
+    margin: auto 2em 1em auto;
+    width: 5em;
+    height: 2.5em;
+    cursor: pointer; 
+}
+
+.botao_env p{
+    margin-left: auto;
+    margin-right: auto;
+}
+.botao_env:hover{
+    background-color: rgb(109, 109, 109);
+}
+
+.img_fundo{
+    width: 100%;
+    max-width:100%;
+    height:auto;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5em;
+}
+
+.rodape{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone{
+    margin: .6em .6em .6em .6em;
+    width: 1.7em;
+    cursor: pointer;
+}
+.submenu_mobil{
+    text-align: left;
+}
+
+.submenu_mobil li{
+    margin-bottom: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hide{display:none}
+
+.container_form{
+    margin-top: 1.5em;
+}
+
+.form_ident{
+    padding-top: 0.2em;
+    margin-bottom: 1em;
+}
+.form_msg{
+    margin-bottom: 1em;
+}
+
+.formu{
+    padding:8px;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+@media screen and (min-width: 560px){
+    
+    .show-desk{
+        display: block;
+    }
+
+    header{
+        overflow: inherit;
+        background: black;
+        background-size: cover;
+    }
+    .menuBar{
+        margin-top: inherit;
+        margin-bottom: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start; 
+        list-style: none;
+        padding: 0;
+        white-space: nowrap;
+        position: relative;
+    }
+
+
+    .itemBar{
+        padding: 1em 1em 1em 1em;
+        cursor: pointer;
+        /*para o submenu*/
+        position: relative;
+    }
+
+    .itemBar ul{
+        z-index: 1;
+        position:absolute;  
+        left:0;
+        background-color: black; 
+        display:none;
+    }
+
+    /*submenu*/
+    .itemBar:hover .itemBar ul li{
+        display: block;
+      }
+    .menuBar li:hover ul, .menuBar li.over ul{display:block;}
+
+    .menuBar li ul li{ 
+        display:block; 
+        z-index: 1;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .slides{
+        position: relative;
+        text-align: center;
+        z-index: -5;    
+    }
+
+    .txt_slide{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding-bottom: -3em;
+    }
+    .subti_slide{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .contact_texto{
+        float: left;
+        margin-top: 1em;
+    }
+
+    .container_form{
+        float: right;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+
+    .hide-desk{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 840px){
+    .img_slide{
+        width: 100%;
+        height:auto;
+    }
+    .bio, .toune_content, .container-contato{
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
